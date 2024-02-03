@@ -97,6 +97,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 $(call soong_config_set,samsungCameraVars,needs_sec_get_cam_pos_v2,true)
+$(call soong_config_set,samsungCameraVars,needs_sec_reserved_field,true)
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-legacy.samsung \
