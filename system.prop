@@ -11,3 +11,66 @@ ro.netflix.channel=2eb27aa0-3926-11e9-8c73-9b498cd1a550
 ro.netflix.signup=1
 
 persist.vendor.dpm.feature=11
+
+# DALVIK
+dalvik.vm.heapsize=512m
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapstartsize=16m
+dalvik.vm.heapmaxfree=8m
+dalvik.vm.heapminfree=2m
+dalvik.vm.heaptargetutilization=0.75
+
+#hiệu xuất
+#dalvik.vm.dexopt-flags=v=n,o=n,m=n,u=n
+
+# Vô hiệu hóa nhiều kết xuất RAM hơn
+persist.vendor.ssr.enable_ramdumps=0
+
+#Đa nhiệm
+sys.config.spcm_enable=false
+sys.config.spcm_kill_skip=true
+sys.config.samp_spcm_enable=false
+sys.config.spcm_db_enable=false
+sys.config.spcm_db_launcher=false
+sys.config.spcm_preload_enable=false
+sys.config.spcm_gcm_kill_enable=false
+
+#master
+ro.ENFORCE_PROCESS_LIMIT=false
+ro.MAX_SERVICE_INACTIVITY=false
+ro.MIN_HIDDEN_APPS=false
+ro.MAX_HIDDEN_APPS=false
+ro.CONTENT_APP_IDLE_OFFSET=false
+ro.EMPTY_APP_IDLE_OFFSET=false
+ro.MAX_ACTIVITIES=false
+ro.ACTIVITY_INACTIVITY_RESET_TIME=false
+ro.MAX_RECENT_TASKS=false
+ro.MIN_RECENT_TASKS=false
+ro.APP_SWITCH_DELAY_TIME=false
+ro.MAX_PROCESSES=false
+ro.PROC_START_TIMEOUT=false
+ro.CPU_MIN_CHECK_DURATION=false
+ro.GC_TIMEOUT=false
+ro.SERVICE_TIMEOUT=false
+ro.MIN_CRASH_INTERVAL=false
+
+# Tối ưu hóa bộ nhớ RAM
+ro.config.fha_enable=true
+ro.sys.fw.bg_apps_limit=32
+ro.config.dha_cached_max=16
+ro.config.dha_empty_max=42
+ro.config.dha_empty_init=32
+ro.config.dha_lmk_scale=0.545
+ro.config.dha_th_rate=2.3
+ro.config.sdha_apps_bg_max=64
+ro.config.sdha_apps_bg_min=8
+
+# Tối ưu hóa bộ nhớ
+ro.sys.fw.bservice_enable=true
+ro.sys.fw.bservice_limit=128
+#ro.sys.fw.bservice_age=10000
+ro.sys.fw.bg_apps_limit=256
+ro.vendor.qti.sys.fw.bservice_enable=true
+ro.vendor.qti.sys.fw.bservice_limit=128
+#ro.vendor.qti.sys.fw.bservice_age=10000
+ro.vendor.qti.sys.fw.bg_apps_limit=256
